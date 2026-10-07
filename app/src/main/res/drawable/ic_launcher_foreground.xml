@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- open ring, with a gap at the top, suggesting a fasting window -->
+    <path
+        android:strokeColor="#FFFFFF" android:strokeWidth="7"
+        android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M 54 28 A 26 26 0 1 1 53.9 28" />
+    <path
+        android:strokeColor="#0E9F8E" android:strokeWidth="9"
+        android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M 44 29 A 26 26 0 0 1 64 29" />
+    <!-- clock hands -->
+    <path
+        android:strokeColor="#FFFFFF" android:strokeWidth="5"
+        android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M 54 54 L 54 40" />
+    <path
+        android:strokeColor="#FFFFFF" android:strokeWidth="5"
+        android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M 54 54 L 65 60" />
+</vector>

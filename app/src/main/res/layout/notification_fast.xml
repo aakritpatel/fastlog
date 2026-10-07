@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Information order here is deliberate: elapsed time first and largest, then
+  time remaining, then the plan.
+
+  The elapsed value is a real Chronometer widget rather than text we refresh, so
+  the system ticks it. That lets it be the most prominent element without
+  costing a periodic wakeup or a foreground service.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Chronometer
+        android:id="@+id/fast_elapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fast_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fast_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp" />
+</LinearLayout>

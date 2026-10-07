@@ -1,0 +1,16 @@
+# Signing material — never commit these
+*.jks
+*.keystore
+keystore.properties
+
+# Build output
+build/
+app/build/
+.gradle/
+local.properties
+captures/
+
+# IDE
+.idea/
+*.iml
+.DS_Store
